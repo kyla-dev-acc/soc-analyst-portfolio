@@ -4,7 +4,7 @@
 Configure a router (R1) with IPv4 addresses on all interfaces, connect three separate LANs through three switches, and verify end-to-end connectivity between hosts on each network.
 
 ## Topology
-![Network Topology](lab-photos/day-08-ipv4-addresses.png)
+![Network Topology](01-networking/lab-photos/day-08-ipv4-addresses.png)
 
 The topology consists of one router (R1) connecting three LANs, each on its own subnet:
 
