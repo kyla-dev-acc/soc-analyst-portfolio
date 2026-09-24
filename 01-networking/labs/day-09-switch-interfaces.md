@@ -1,4 +1,4 @@
-# Day 7 Lab: Switch and Router Configuration 
+# Day 9 Lab: Switch and Router Configuration 
 
 ## Objective
 Configure a router (R1) and two switches (SW1, SW2) with hostnames, interface descriptions, and manually set speed/duplex on inter-device links, then assign IP addresses to four hosts and verify end-to-end connectivity across a single shared subnet.
