@@ -4,8 +4,7 @@
 Configure a router (R1) and two switches (SW1, SW2) with hostnames, interface descriptions, and manually set speed/duplex on inter-device links, then assign IP addresses to four hosts and verify end-to-end connectivity across a single shared subnet.
 
 ## Topology
-![Network Topology](./topology.png)
-
+![Network Topology](../lab-photos/day-09-configuring-interfaces.png)
 The topology consists of one router (R1) connected to SW1, which is connected to SW2, with two PCs hanging off each switch. All devices share a single subnet.
 
 | Network         | Switch | Host | Connects To |
