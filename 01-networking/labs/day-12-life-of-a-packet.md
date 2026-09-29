@@ -38,14 +38,14 @@ Trace the src/dst MAC address at each specified point along the path from PC1 to
 
 | Segment                          | Source MAC | Destination MAC |
 |------------------------------------|------------|-------------------|
-| A. PC1 → SW1                      |            |                    |
-| B. SW1 → R1 (G0/1)                |            |                    |
-| C. R1 (G0/0) → R2 (G0/1)          |            |                    |
-| D. R2 (G0/0) → R3 (G0/1)          |            |                    |
-| E. R3 (G0/0) → SW2                |            |                    |
-| F. SW2 → PC4                      |            |                    |
+| A. PC1 → SW1                      | `1111` (PC1 NIC) | `AAAA` (R1 G0/1 — PC1's gateway) |
+| B. SW1 → R1 (G0/1)                | `1111` (PC1 NIC) | `AAAA` (R1 G0/1) |
+| C. R1 (G0/0) → R2 (G0/1)          | `BBBB` (R1 G0/0) | `CCCC` (R2 G0/1) |
+| D. R2 (G0/0) → R3 (G0/1)          | `DDDD` (R2 G0/0) | `EEEE` (R3 G0/1) |
+| E. R3 (G0/0) → SW2                | `FFFF` (R3 G0/0) | `4444` (PC4 NIC) |
+| F. SW2 → PC4                      | `FFFF` (R3 G0/0) | `4444` (PC4 NIC) |
 
-> Note: A & B share the same frame (SW1 doesn't rewrite it), as do E & F (SW2 doesn't rewrite it). Fill in actual MAC values from `show interfaces` / Packet Tracer Simulation mode — remember to ping once first so ARP entries are populated before capturing the trace.
+A/B share the same frame (SW1 doesn't rewrite it), and E/F share the same frame (SW2 doesn't rewrite it). This is the exact mirror image of Part 3: the same six MACs appear, just with source and destination swapped at each hop, since it's the same four router interfaces and the same two host NICs, traveling in the opposite direction.
 
 ## Part 2 — PC1 pings PC3
 Trace the src/dst MAC address at each specified point along the path from PC1 to PC3. Since PC1 and PC3 are on the same LAN (192.168.1.0/24), the frame never reaches a router — it's switched directly.
