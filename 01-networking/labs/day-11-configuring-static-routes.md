@@ -68,11 +68,13 @@ hostname R1
 
 interface g0/1
  ip address 192.168.1.254 255.255.255.0
+ description ## Link to SW1 ##
  no shutdown
  exit
 
 interface g0/0
  ip address 192.168.12.1 255.255.255.0
+ description ## Link to R1 ##
  no shutdown
  exit
 
@@ -92,11 +94,13 @@ hostname R2
 
 interface g0/0
  ip address 192.168.12.2 255.255.255.0
+ description ## Link to R1 ##
  no shutdown
  exit
 
 interface g0/1
  ip address 192.168.13.2 255.255.255.0
+ description ## Link to R3 ##
  no shutdown
  exit
 
@@ -116,11 +120,13 @@ hostname R3
 
 interface g0/0
  ip address 192.168.13.3 255.255.255.0
+ description ## Link to R2 ##
  no shutdown
  exit
 
 interface g0/1
  ip address 192.168.3.254 255.255.255.0
+ description ## Link to SW2 ##
  no shutdown
  exit
 
