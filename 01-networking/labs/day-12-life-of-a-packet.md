@@ -4,7 +4,7 @@
 Trace the source/destination MAC address of a frame at every hop along three different paths through a multi-router topology, in order to demonstrate how MAC addresses change at each **router** (Layer 3) interface but stay unchanged across a **switch** (Layer 2), and verify the results using Packet Tracer's Simulation mode.
 
 ## Topology
-![Network Topology](../lab-photos/day-12-life-of-a-packet.png)
+![Network Topology](../labs-photos/day-12-life-of-a-packet.png)
 
 | Network            | Segment                          |
 |---------------------|-----------------------------------|
@@ -50,12 +50,12 @@ Trace the src/dst MAC address at each specified point along the path from PC1 to
 ## Part 2 — PC1 pings PC3
 Trace the src/dst MAC address at each specified point along the path from PC1 to PC3. Since PC1 and PC3 are on the same LAN (192.168.1.0/24), the frame never reaches a router — it's switched directly.
 
-| Segment            | Source MAC | Destination MAC |
-|----------------------|------------|-------------------|
-| A. PC1 → SW1         |            |                    |
-| B. SW1 → PC3         |            |                    |
+| Segment            | Source MAC     | Destination MAC |
+|----------------------|-----------------|--------------------|
+| A. PC1 → SW1         | `00D0.BA11.1111` (PC1 NIC) | `0010.1133.3333` (PC3 NIC) |
+| B. SW1 → PC3         | `00D0.BA11.1111` (PC1 NIC) | `0010.1133.3333` (PC3 NIC) |
 
-> A and B are the same frame end-to-end — SW1 simply switches it from PC1's port to PC3's port without any rewriting, since both hosts are on the same subnet and no routing occurs.
+A and B are the same frame end-to-end — SW1 receives it on FastEthernet0/1 and simply switches it out FastEthernet0/3 to PC3, without rewriting the Ethernet header, since both hosts are on the same subnet and no routing occurs.
 
 ## Part 3 — PC4 pings PC1
 Trace the src/dst MAC address at each specified point along the path from PC4 back to PC1.
