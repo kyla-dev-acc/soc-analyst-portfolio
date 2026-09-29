@@ -4,7 +4,7 @@
 Trace the source/destination MAC address of a frame at every hop along three different paths through a multi-router topology, in order to demonstrate how MAC addresses change at each **router** (Layer 3) interface but stay unchanged across a **switch** (Layer 2), and verify the results using Packet Tracer's Simulation mode.
 
 ## Topology
-![Network Topology](../labs-photos/day-12-life-of-a-packet.png)
+![Network Topology](../lab-photos/day-12-life-of-a-packet.png)
 
 | Network            | Segment                          |
 |---------------------|-----------------------------------|
