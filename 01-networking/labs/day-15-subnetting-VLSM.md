@@ -1,4 +1,4 @@
-# VLSM Subnetting and Static Routing Lab
+# Day 15: VLSM Subnetting and Static Routing Lab
 
 ## Objective
 Subnet a single `192.168.5.0/24` network using Variable Length Subnet Masking (VLSM) to efficiently address four LANs of different sizes plus a point-to-point link between two routers, assign the first usable address to each LAN's PC and the last usable address to each LAN's router interface, and configure static routes so every PC across both routers can ping each other.
