@@ -1,4 +1,4 @@
-# Static Routing Troubleshooting Lab
+# Day 11: Static Routing Troubleshooting Lab
 
 ## Objective
 Starting from a topology where PC1 and PC2 cannot ping each other, locate and fix exactly one misconfiguration on each of the three routers (R1, R2, R3), then verify end-to-end connectivity between PC1 and PC2.
