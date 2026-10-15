@@ -14,7 +14,7 @@ All devices were preconfigured from the end of Day 17's lab, with SW2 replaced b
 
 ## Topology
 
-![Network Topology](../lab-photos-day-18-VLANs-multi-layer-switch.png)
+![Network Topology](../lab-photos/day-18-VLANs-multi-layer-switch.png)
 
 ## Subnet Breakdown
 
