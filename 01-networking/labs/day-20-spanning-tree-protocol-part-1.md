@@ -1,4 +1,4 @@
-# Day 19: Spanning Tree Protocol (STP) - Root Bridge and Port Roles
+# Day 20: Spanning Tree Protocol (STP) - Root Bridge and Port Roles
 
 ## Objective
 
@@ -6,7 +6,8 @@ Using the bridge priorities and MAC addresses shown in the topology, determine w
 
 ## Topology
 
-![Network Topology](images/topology.png)
+![Network Topology](../lab-photos/day-20-spanning-tree-protocol-part-1.png)
+
 
 ## Bridge Information
 
