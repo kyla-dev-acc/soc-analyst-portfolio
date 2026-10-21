@@ -101,7 +101,6 @@ interface f0/24
 
 ## Step 1: Root Bridge
 
-![show spanning-tree on SW1](images/sw1-show-spanning-tree.png)
 
 **The root bridge is SW1.** All four switches have the same priority, so the lowest MAC address wins, and SW1 (`0005.5E4E.714B`) has the lowest.
 
@@ -124,7 +123,6 @@ When a switch receives its own BPDUs on another port, it has two ports on the sa
 
 ## Step 2: Port Roles on the Remaining Switches
 
-![show spanning-tree on SW2, SW3 and SW4](images/show-spanning-tree-sw2-sw3-sw4.png)
 
 ### Root Path Costs
 
@@ -184,7 +182,6 @@ RSTP uses the link type to decide whether a port can use the fast proposal/agree
 
 **Shared.** SW1 F0/24 connects to Hub0, which also connects PC1 and PC2. A hub creates a shared, half-duplex segment with more than one device, so the link is not point-to-point.
 
-![show spanning-tree interface f0/24 detail](images/sw1-f0-24-link-type.png)
 
 ## Skills Demonstrated
 
