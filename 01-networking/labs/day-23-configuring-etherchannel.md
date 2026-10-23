@@ -175,7 +175,6 @@ show etherchannel load-balance
 
 ### Routing
 
-![show ip route on DSW1](images/dsw1-show-ip-route.png)
 
 - DSW1 has a connected route for `172.16.1.0/24` and `10.0.0.0/30` and a static route for `172.16.2.0/24` through `10.0.0.2`.
 - DSW2 has the matching connected routes and a static route for `172.16.1.0/24` through `10.0.0.1`.
