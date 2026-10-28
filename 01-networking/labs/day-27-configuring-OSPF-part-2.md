@@ -6,7 +6,7 @@ Configure four routers with hostnames, IP addresses, and loopback interfaces, en
 
 ## Topology
 
-![Network Topology](../lab-photos/day-27-ospf-part-2.png)
+![Network Topology](../lab-photos/day-27-OSPF-part-2.png)
 
 ## Networks
 
