@@ -6,7 +6,7 @@ Configure IPv6 on a small network of two routers: use EUI-64 to generate the int
 
 ## Topology
 
-![Network Topology](../img/ipv6-eui-link-local.png)
+![Network Topology](../lab-photos/ipv6-eui-link-local.png)
 
 ## Networks
 
